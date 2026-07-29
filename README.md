@@ -27,7 +27,7 @@ These are some general patches for plugins running on `mc.colourlabs.net` (1.12.
 
 ### AdvancedTeleport
 
-* `SQLManager.implementConnection` - `com.mysql.jdbc.Driver` → `com.mysql.cj.jdbc.Driver`
+* `SQLManager.implementConnection` - `com.mysql.jdbc.Driver` -> `com.mysql.cj.jdbc.Driver` (not available on modern Java)
 * `UpdateChecker.getURLResults` - full rewrite (broken in modern Java)
 * `UpdateChecker.getInternalTimestamp` - full rewrite (broken in modern Java)
 
