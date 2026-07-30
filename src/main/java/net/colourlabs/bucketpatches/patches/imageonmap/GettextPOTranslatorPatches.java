@@ -15,7 +15,6 @@ import org.objectweb.asm.tree.VarInsnNode;
 
 @TargetClass("fr.moribus.imageonmap.components.i18n.translators.gettext.GettextPOTranslator")
 public class GettextPOTranslatorPatches {
-
     @TransformMethod("getPluralIndex")
     public static void fixNullScriptEngine(MethodNode method) {
         LabelNode originalCode = new LabelNode();
